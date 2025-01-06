@@ -24,6 +24,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link
+          href="https://cdn.prod.website-files.com/64cd0df1806781d956403b26/65292b42d04140b0f2ef954a_Favicon.png"
+          rel="shortcut icon"
+          type="image/x-icon"
+        />
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
       </body>
