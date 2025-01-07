@@ -1,6 +1,33 @@
+@font-face {
+  font-family: "OptimaLTPro Roman";
+  src: url("https://cdn.prod.website-files.com/64cd0df1806781d956403b26/64cd24eaf41f6e260b3bf170_OptimaLTPro-Roman.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Graphik Regular";
+  src: url("https://cdn.prod.website-files.com/64cd0df1806781d956403b26/64cd29bbc20b01e6bc2d1a52_GraphikRegular.otf")
+    format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Graphik Medium";
+  src: url("https://cdn.prod.website-files.com/64cd0df1806781d956403b26/64cd29d921f9ddf44eeb6d84_GraphikMedium.otf")
+    format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
 :root {
   --font-primary: #0a0a3d;
   --light-grey-30: #f3f1ef;
+  --gold: #a18a6b;
 }
 
 /* Amenities section */
@@ -18,7 +45,7 @@
 }
 
 .amenities-slides {
-  margin: auto 30px;
+  margin: 30px;
 }
 .amenities-slides .amenities-card-img {
   height: 30vw;
@@ -55,6 +82,157 @@
 .amenities-slides .splide__track {
   padding-bottom: 30px;
 }
+/* ----------------------------------------- */
+
+/* residence section */
+
+.residence-slides .residence-card-img img {
+  width: 100%;
+  object-fit: cover;
+  inset: 0%;
+  height: 100%;
+}
+
+.residence-slides .residence-card-img {
+  width: 100%;
+  height: 100dvh;
+}
+.residence_slider .splide__pagination {
+  bottom: 7em !important;
+}
+
+.residence_slider .splide__pagination__page.is-active {
+  background-color: #ffff !important;
+}
+
+.residence-card-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.residence-card-img .overlay-shadow {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  background: linear-gradient(180deg, transparent, rgba(20, 20, 20, 1) 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.residence_slider .splide__arrow {
+  bottom: 7em !important;
+  top: auto !important;
+}
+.residence_slider .splide__arrow.splide__arrow--prev {
+  left: auto;
+  right: 12em;
+}
+.residence_slider .splide__arrow.splide__arrow--next {
+  right: 7em;
+}
+
+.content-only {
+  color: var(--font-primary);
+  max-width: 880px;
+  letter-spacing: normal;
+  text-transform: none;
+  font-family: OptimaLTPro Roman, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+/* ----------------------------------------- */
+
+/*Mid content section  */
+
+.content-section {
+  /* text-align: center;
+  margin: 30px auto; */
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 1.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12rem 3rem;
+  display: flex;
+}
+.content-section .content-title {
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-family: Graphik Medium, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.75em;
+  color: var(--gold);
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  opacity: 1;
+}
+.content-section .content-h3 {
+  color: var(--font-primary);
+  /* width: 738px; */
+  /* margin-top: 0;
+  margin-bottom: 1.5rem; */
+  margin: 0;
+  text-transform: uppercase;
+  font-family: OptimaLTPro Roman, sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 105%;
+
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  opacity: 1;
+}
+.content-para {
+  text-wrap: balance;
+}
+.content-para {
+  color: var(--font-primary);
+  text-align: center;
+  max-width: 640px;
+  margin: 0;
+
+  font-family: Graphik Regular, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.75em;
+}
+
+/* ---------------------------------------------------- */
+
+/* pagination */
+.splide__pagination__page {
+  width: 80px !important;
+  height: 2px !important;
+  border-radius: 0 !important;
+}
+.splide__pagination__page.is-active {
+  background-color: #010205 !important;
+}
+.splide__arrow {
+  top: none !important;
+  width: max-content !important;
+  background: transparent !important;
+  opacity: 1 !important;
+}
+.splide__arrow--prev svg {
+  transform: none !important;
+}
+.splide__arrow--next svg {
+  transform: scaleX(-1) !important;
+}
+.splide__arrow svg {
+  width: 27px !important;
+}
+/* custom arrows */
+
 .custom-arrows {
   position: absolute;
   bottom: 10px; /* Adjust as needed */
@@ -73,9 +251,4 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-}
-
-/* residence highlight */
-.residence-highlight-div {
-  background-image: url("https://cdn.prod.website-files.com/64cd0df1806781d956403b26/6571af2b6e694652412ee3c8_lana-residence-2x-p-1600.webp");
 }

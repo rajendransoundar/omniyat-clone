@@ -2,6 +2,7 @@
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import CustomArrows from "../slideNav";
+import Image from "next/image";
 // import Image from "next/image";
 const splideOptions = {
   perPage: 2,
@@ -35,10 +36,10 @@ export default function slide() {
                   <SplideSlide key={slide?.id} className="splide__slide">
                     <div className="amenities-card">
                       <div className="amenities-card-img">
-                        <img
+                        <Image
                           src={slide?.url}
-                          width={300}
-                          height={450}
+                          width={580}
+                          height={350}
                           alt={slide?.title}
                         />
                       </div>

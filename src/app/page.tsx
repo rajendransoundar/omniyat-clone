@@ -1,11 +1,13 @@
 import Amenities from "../components/amenities";
-import ResidenceHighlight from "../components/residenceHighlight";
+import ResidenceSection from "../components/residenceSection";
+import OverviewSection from "../components/overviewSection"
 
 export default function Home() {
   return (
     <>
+    <OverviewSection/>
+      <ResidenceSection />
       <Amenities />
-      <ResidenceHighlight />
     </>
   );
 }

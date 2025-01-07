@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React, { useState, useEffect, useRef } from "react";
 
 const OverlayImageChanger = () => {
@@ -24,9 +25,9 @@ const OverlayImageChanger = () => {
       const scrolledPercentage = (Math.abs(divTop) / divHeight) * 100;
       console.log(rect, divHeight, scrolledPercentage, "%%%%%%%%%%%%%%%");
 
-      if (scrolledPercentage >= 50 && scrolledPercentage <= 70) {
+      if (scrolledPercentage >= 40 && scrolledPercentage <= 70) {
         setOverlayImage(overlayImages["third"]);
-      } else if (scrolledPercentage >= 30) {
+      } else if (scrolledPercentage >= 20) {
         setOverlayImage(overlayImages["second"]);
       } else if (scrolledPercentage >= 0) {
         setOverlayImage(overlayImages["first"]);
@@ -48,7 +49,7 @@ const OverlayImageChanger = () => {
       }}
     >
       {/* Main Image */}
-      <img
+      <Image
         src="https://cdn.prod.website-files.com/64cd0df1806781d956403b26/6571af2b6e694652412ee3c8_lana-residence-2x-p-1600.webp"
         alt="Main"
         style={{
@@ -56,6 +57,8 @@ const OverlayImageChanger = () => {
           height: "100%",
           objectFit: "cover",
         }}
+        width={1340}
+        height={748}
       />
 
       {/* Overlay Image */}
