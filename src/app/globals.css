@@ -1,3 +1,10 @@
+:root {
+  --font-primary: #0a0a3d;
+  --light-grey-30: #f3f1ef;
+}
+
+/* Amenities section */
+
 .amenities-vdo-container {
   background-image: url(https://cdn.prod.website-files.com/64cd0df…/6500895…_dorchester-hero-poster.webp);
   background-position: 0 0;
@@ -6,6 +13,69 @@
   position: relative;
   width: 100%;
 }
-.amenities-vdo-container video{
+.amenities-vdo-container video {
   width: 100%;
+}
+
+.amenities-slides {
+  margin: auto 30px;
+}
+.amenities-slides .amenities-card-img {
+  height: 30vw;
+}
+.amenities-slides .splide__slide:nth-child(odd) {
+  width: 25vw !important;
+}
+.amenities-slides .splide__slide:nth-child(even) {
+  width: 50vw !important;
+}
+.amenities-slides .splide__slide img {
+  width: 100%;
+  object-fit: cover;
+  inset: 0%;
+  height: 100%;
+}
+.amenities-card .card-text {
+  border-right: 2px solid var(--light-grey-30);
+  border-bottom: 2px solid var(--light-grey-30);
+  border-left: 2px solid var(--light-grey-30);
+  /* min-height: 8rem; */
+  padding: 2rem;
+}
+.amenities-card .card-text h4 {
+  margin: 0;
+  color: var(--font-primary);
+  letter-spacing: normal;
+  text-transform: none;
+  font-family: OptimaLTPro Roman, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+.amenities-slides .splide__track {
+  padding-bottom: 30px;
+}
+.custom-arrows {
+  position: absolute;
+  bottom: 10px; /* Adjust as needed */
+  right: 10px; /* Adjust as needed */
+  display: flex;
+  gap: 5px; /* Space between arrows */
+}
+
+.custom-arrow {
+  background-color: #000; /* Custom background color */
+  color: #fff; /* Custom icon color */
+  border-radius: 50%;
+  width: 40px; /* Custom size */
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* residence highlight */
+.residence-highlight-div {
+  background-image: url("https://cdn.prod.website-files.com/64cd0df1806781d956403b26/6571af2b6e694652412ee3c8_lana-residence-2x-p-1600.webp");
 }

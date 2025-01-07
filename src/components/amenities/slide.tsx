@@ -1,11 +1,12 @@
 "use client";
-import { Splide, SplideSlide } from '@splidejs/react-splide';
-import '@splidejs/react-splide/css';
+import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
+import "@splidejs/react-splide/css";
+import CustomArrows from "../slideNav";
 // import Image from "next/image";
 const splideOptions = {
   perPage: 2,
   perMove: 1,
-  gap: 10,
+  gap: 30,
   arrows: true,
   pagination: true,
   lazyload: true,
@@ -19,28 +20,37 @@ const splideOptions = {
   },
 };
 export default function slide() {
- 
   return (
     <>
       <div className="amenities-slides">
         <Splide
           options={splideOptions}
           className="amenities_slider"
+          hasTrack={false}
         >
-          {amenitiesSlides &&
-            amenitiesSlides?.map((slide: any, index: any) => {
-              return (
-                <SplideSlide key={slide?.id} className="splide__slide">
-                  <div className="amenities-card">
-                    <div className="amenities-card-img">
-                        <img src={slide?.url} width={300} height={450} alt={slide?.title} />
+          <SplideTrack>
+            {amenitiesSlides &&
+              amenitiesSlides?.map((slide: any, index: any) => {
+                return (
+                  <SplideSlide key={slide?.id} className="splide__slide">
+                    <div className="amenities-card">
+                      <div className="amenities-card-img">
+                        <img
+                          src={slide?.url}
+                          width={300}
+                          height={450}
+                          alt={slide?.title}
+                        />
+                      </div>
+                      <div className="card-text">
+                        <h4>{slide?.title}</h4>
+                      </div>
                     </div>
-                    <div className="card-text"><h4>{slide?.title}
-                    </h4></div>
-                  </div>
-                </SplideSlide>
-              );
-            })}
+                  </SplideSlide>
+                );
+              })}
+          </SplideTrack>
+          <CustomArrows />
         </Splide>
       </div>
     </>
@@ -82,5 +92,5 @@ const amenitiesSlides = [
     id: 7,
     url: "https://cdn.prod.website-files.com/64d10d152d5483b843123d85/6571c23f7a3c4eb09b5ed8d0_amenities-07-d.webp",
     title: "Rooftop Pool",
-  }
+  },
 ];
