@@ -3,7 +3,7 @@ import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import CustomArrows from "../slideNav";
 import Image from "next/image";
-// import Image from "next/image";
+
 const splideOptions = {
   perPage: 1,
   perMove: 1,
@@ -40,7 +40,7 @@ export default function slide() {
                           src={slide?.url}
                           width={580}
                           height={350}
-                          alt={slide?.title}
+                          alt="residence img"
                         />
                         <div className="overlay-shadow"></div>
                       </div>

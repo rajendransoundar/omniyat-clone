@@ -239,6 +239,23 @@ body {
 
 /* ----------------------------------------- */
 
+/* lifestyle section */
+
+.lifestyle.content-section .content-para {
+  letter-spacing: normal;
+  text-transform: none;
+  font-family: OptimaLTPro Roman, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.5em;
+  color: var(--font-primary);
+  text-align: center;
+  max-width: 900px;
+  margin: 0;
+}
+
+/* ----------------------------------------- */
+
 /* Specification section */
 
 .spec-main-container {
@@ -291,6 +308,7 @@ body {
   font-weight: 600;
   font-size: 24px;
   color: #fff;
+  cursor: pointer;
 }
 /* --------------------------------------------------- */
 
@@ -336,6 +354,8 @@ body {
     rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   transform-style: preserve-3d;
   opacity: 1;
+  text-align: center;
+  text-wrap: balance;
 }
 .content-para {
   text-wrap: balance;
@@ -413,37 +433,37 @@ body {
   font-weight: 400;
   line-height: 105%;
 }
-.enquire-content .enquire-more{
+.enquire-content .enquire-more {
   color: #fff;
   font-family: Graphik Regular, sans-serif;
-    font-size: .75rem;
-    font-weight: 400;
-    line-height: 1.5em;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.5em;
 }
 
-.enquire-cta{
+.enquire-cta {
   grid-column-gap: 2rem;
-    grid-row-gap: 2rem;
-    justify-content: space-around;
-    margin-top: 2rem;
-    display: flex;
+  grid-row-gap: 2rem;
+  justify-content: space-around;
+  margin-top: 2rem;
+  display: flex;
 }
 
-.enquire-cta a{
+.enquire-cta a {
   z-index: 3;
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
-    white-space: nowrap;
-    background-color: #00000080;
-    padding: .625rem 6rem .5rem;
-    font-family: OptimaLTPro Roman, sans-serif;
-    font-size: .875rem;
-    font-weight: 400;
-    line-height: 1.25rem;
-    color: #fff;
-    text-decoration: none;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  white-space: nowrap;
+  background-color: #00000080;
+  padding: 0.625rem 6rem 0.5rem;
+  font-family: OptimaLTPro Roman, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  color: #fff;
+  text-decoration: none;
 }
-.enquire-cta a svg{
+.enquire-cta a svg {
   margin-right: 10px;
 }
 /* ---------------------------------------------------- */
@@ -492,4 +512,49 @@ body {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+
+
+/* Footer section */
+.footer-container {
+  z-index: 3;
+  background-color: var(--footer-black);
+  position: relative;
+  box-sizing: border-box;
+}
+.footer-header {
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 1.5rem;
+  border-style: none none solid;
+  border-width: 1px;
+  border-color: var(--white) var(--white) #ffffff0d;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4.875rem;
+  padding-bottom: 4.875rem;
+  display: flex;
+}
+
+.footer-links {
+  grid-column-gap: 3rem;
+  grid-row-gap: 3rem;
+  border-bottom: 1px solid #ffffff0d;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2.5rem 6rem;
+  display: flex;
+}
+
+.footer-links-col-container {
+  grid-column-gap: 5rem;
+  flex: 4 55%;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  display: flex;
+}
+.footer-links-col {
+  flex: 1;
 }
