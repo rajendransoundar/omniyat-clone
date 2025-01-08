@@ -34,8 +34,8 @@ const Header = () => {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <rect x="2" y="6" width="20" height="2" fill="currentColor"></rect>
-            <rect x="2" y="16" width="20" height="2" fill="currentColor"></rect>
+            <rect x="2" y="6" width="20" height="2" fill="#fff"></rect>
+            <rect x="2" y="16" width="20" height="2" fill="#fff"></rect>
           </svg>
         </div>
         <div className="logo">

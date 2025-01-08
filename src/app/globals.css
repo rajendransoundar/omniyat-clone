@@ -93,6 +93,37 @@ body {
 }
 /* ---------------------------------------------- */
 
+/* Hero Section */
+.hero-main-container{
+  height: 100vh;
+  position: relative;
+}
+.hero-main-container .hero-bg {
+  z-index: 1;
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  inset: 0%;
+}
+.hero-main-container .hero-bg video {
+  object-fit: cover;
+  z-index: -100;
+  background-position: 50%;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  position: absolute;
+  inset: -100%;
+}
+.hero-slide-container{
+  position: absolute;
+  z-index: 5;
+}
+
+/* ---------------------------------------------- */
+
 /* overview section */
 .overview-slide-content {
   max-width: 49rem;
