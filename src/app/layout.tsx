@@ -31,7 +31,7 @@ export default function RootLayout({
           type="image/x-icon"
         />
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body >
         {children}
       </body>
     </html>
