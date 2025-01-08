@@ -1,6 +1,8 @@
 import React from "react";
-
-export default function index({ theme }) {
+interface CustomArrowsProps {
+  theme?: any; //optional
+}
+export default function index({ theme }:CustomArrowsProps) {
   const svgClr = theme === "white" ? "#ffff" : "#0a0a3d";
   return (
     <>
