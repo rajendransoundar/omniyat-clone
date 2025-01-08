@@ -25,7 +25,7 @@ export default function index() {
                 return (
                   <>
                     <div className="footer-links-col" key={item?.id}>
-                      <h3>{item.title}</h3>
+                      <h3 className="footer-links-title">{item.title}</h3>
                       <ul className="footer-links-list">
                         {item?.lists?.map((list, index) => (
                           <li key={index} className="footer-links-item">
