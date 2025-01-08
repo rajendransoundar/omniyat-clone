@@ -24,7 +24,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className={`header ${isScrolledDown ? "scrolled" : ""}`}>
+    <nav className={`header ${isScrolledDown ? "scrolled" : ""}`}>
       <div className="header-main-row">
         <div className="menu">
           <svg
@@ -63,7 +63,7 @@ const Header = () => {
           <a href="#location">Location</a>
         </div>
       )}
-    </header>
+    </nav>
   );
 };
 

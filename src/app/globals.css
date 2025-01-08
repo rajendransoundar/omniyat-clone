@@ -67,12 +67,12 @@ body {
   font-family: OptimaLTPro Roman, sans-serif;
   padding: 0.625rem 1.625rem 0.5rem;
   backdrop-filter: blur(50px);
-  border: 1px solid #000
-
+  border: 1px solid #000;
 }
 .header-main-row .contact-btn:hover {
-background-color: #000;
-border: 1px solid #ffff}
+  background-color: #000;
+  border: 1px solid #ffff;
+}
 .hedaer-nav {
   display: flex;
   flex-direction: row;
@@ -90,6 +90,37 @@ border: 1px solid #ffff}
 .hedaer-nav a:hover {
   color: #ffff;
 }
+/* ---------------------------------------------- */
+
+/* overview section */
+.overview-slide-content {
+  max-width: 49rem;
+  padding-bottom: 5rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  position: absolute;
+  inset: auto auto 0% 0%;
+  z-index: 2;
+}
+.overview-slide-content h4 {
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: normal;
+  font-family: OptimaLTPro Roman, sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.5em;
+  margin: 0;
+}
+
+.overview-slide-content .overview-content {
+  font-family: Graphik Regular, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.6em;
+  color: #fff;
+}
+
 /* Amenities section */
 
 .amenities-vdo-container {
@@ -206,6 +237,61 @@ border: 1px solid #ffff}
 }
 
 /* ----------------------------------------- */
+
+/* Specification section */
+
+.spec-main-container {
+  z-index: 4;
+  -webkit-backdrop-filter: blur(50px);
+  backdrop-filter: blur(50px);
+  background-color: #00000080;
+  width: 100%;
+  padding: 1rem 4rem;
+  position: fixed;
+  inset: auto 0% 0%;
+  /* transform: translateY(100%); */
+  box-sizing: border-box;
+
+}
+.spec-header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.spec-grid-container{
+  grid-column-gap: 2rem;
+    grid-row-gap: 4rem;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    margin-top: 2rem;
+    display: grid;
+}
+.spec-header .title,.spec-grid-container .spec-title{
+  font-family: Graphik Regular, sans-serif;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.6em;
+    color: #fff;
+}
+.spec-content{
+  font-family: Graphik Regular, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75em;
+    color: #fff;
+}
+.spec-header button{
+  background: 0;
+  border: 0;
+  outline: 0;
+  font-weight: 600;
+  font-size: 24px;
+  color: #fff;
+}
+/* --------------------------------------------------- */
 
 /*Mid content section  */
 

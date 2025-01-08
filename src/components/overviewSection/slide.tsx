@@ -9,7 +9,7 @@ const splideOptions = {
   perMove: 1,
   gap: 0,
   arrows: true,
-  pagination: true,
+  pagination: false,
   lazyload: true,
   breakpoints: {
     768: {
@@ -42,6 +42,12 @@ export default function slide() {
                           height={350}
                           alt={slide?.title}
                         />
+                        <div className="overview-slide-content">
+                          <h4>{slide?.title}</h4>
+                          <div className="overview-content">
+                            {slide?.content}
+                          </div>
+                        </div>
                         <div className="overlay-shadow"></div>
                       </div>
                     </div>
@@ -49,7 +55,7 @@ export default function slide() {
                 );
               })}
           </SplideTrack>
-          <CustomArrows theme = "white"/>
+          <CustomArrows theme="white" />
         </Splide>
       </div>
     </>
@@ -58,14 +64,23 @@ export default function slide() {
 const residenceSlides = [
   {
     id: 1,
-    url: "https://cdn.prod.website-files.com/64cd0df1806781d956403b26/651db629a9f65c81acd53e9b_lana-residence-01-d.webp",
+    url: "https://cdn.prod.website-files.com/64d10d152d5483b843123d85/654cc3aa01d2cb5faa65a248_lana-overview-01-d.webp",
+    title: "Architecture by Foster+Partners",
+    content:
+      "The building’s innovative use of floor-to-ceiling glass, and terraces throughout its full height make it an instantly recognisable architectural icon.",
   },
   {
     id: 2,
-    url: "https://cdn.prod.website-files.com/64cd0df1806781d956403b26/651db62acd8d7254508cf35a_lana-residence-02-d-p-1600.webp",
+    url: "https://cdn.prod.website-files.com/64d10d152d5483b843123d85/654cc64ed3b4afcfdb680d8d_lana-overview-02-d.webp",
+    title: "For the mind, body and soul",
+    content:
+      "The Lana Residences, Dorchester Collection, Dubai provides its residents with a spectrum of luxury living and leisure.",
   },
   {
     id: 3,
-    url: "https://cdn.prod.website-files.com/64cd0df1806781d956403b26/651db62aa78899259024c20b_lana-residence-03-d-p-1600.webp",
+    url: "https://cdn.prod.website-files.com/64d10d152d5483b843123d85/654ccc55c618140a846ab723_lana-overview-03-d.webp",
+    title: "In the heart of dubai",
+    content:
+      "Across the water from The Lana Residences, Dorchester Collection, Dubai, lies Burj Khalifa District, a stylish area that combines shops and offices with residential buildings and hotels.",
   },
 ];
