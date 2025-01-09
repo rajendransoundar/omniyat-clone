@@ -1,5 +1,6 @@
 import React from "react";
 import ContentSection from "../contentSection";
+import Slide from "../amenities/slide"
 
 export default function index() {
   return (
@@ -22,6 +23,8 @@ export default function index() {
         section="location"
         h3="DISCOVER OUR MIXED-USE MASTERPIECES"
       />
+      <      Slide/>
+
     </>
   );
 }

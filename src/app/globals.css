@@ -94,7 +94,7 @@ body {
 /* ---------------------------------------------- */
 
 /* Hero Section */
-.hero-main-container{
+.hero-main-container {
   height: 100vh;
   position: relative;
 }
@@ -117,7 +117,7 @@ body {
   position: absolute;
   inset: -100%;
 }
-.hero-slide-container{
+.hero-slide-container {
   position: absolute;
   z-index: 5;
 }
@@ -614,4 +614,86 @@ body {
   font-weight: 400;
   line-height: 1.2em;
   color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .header-main-row .menu {
+    order: 3;
+  }
+  .header-main-row {
+    padding-left: 1.5rem;
+    padding-right: 0.5rem;
+  }
+  .hedaer-nav {
+    overflow-x: auto;
+    padding: 0 10px;
+    gap: 4rem;
+    scroll-behavior: smooth;
+    align-items: center;
+  }
+  .header-nav::-webkit-scrollbar {
+    display: none;
+  }
+  .hedaer-nav a:first-child {
+    padding-left: 4rem;
+  }
+  .hero-main-container .hero-bg video {
+    inset: 0%;
+  }
+  .enquire-outer-container,
+  .footer-links {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .enquire-cta {
+    flex-direction: column;
+  }
+  .enquire-cta a {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+  .enquire-content h3 {
+    max-width: 100%;
+  }
+  .footer_logo {
+    width: 240px;
+  }
+  .footer-links-col-container {
+    grid-column-gap: 2.5rem;
+    grid-row-gap: 2.5rem;
+    flex-direction: column;
+  }
+  .content-h3 {
+    font-size: 2rem !important;
+  }
+  .content-section {
+    padding: 6rem 1.5rem;
+  }
+  .residence-highlight-div {
+    height: 100% !important;
+  }
+  .splide__pagination {
+    display: none !important;
+  }
+  .splide__arrows {
+    display: none;
+  }
+  .amenities-slides .splide__slide:nth-child(odd),
+  .amenities-slides .splide__slide:nth-child(even) {
+    width: 80% !important;
+  }
+  .amenities-slides .amenities-card-img {
+    height: 85vw;
+  }
+  .amenities-card .card-text h4 {
+    font-size: 0.75rem;
+    line-height: 1.7em;
+  }
+  .spec-grid-container {
+    grid-template-columns: 1fr;
+    grid-row-gap: 2rem;
+  }
+  .spec-main-container {
+    max-height: calc(100dvh - 128px);
+  }
 }

@@ -21,7 +21,7 @@ export default function Home() {
         <LifestyleSection />
         <LocationSection />
         <EnquireSection />
-        {/* <Specification /> */}
+        <Specification />
         <Footer />
       </main>
     </>

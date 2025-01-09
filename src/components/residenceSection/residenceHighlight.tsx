@@ -42,6 +42,7 @@ const OverlayImageChanger = () => {
 
   return (
     <div
+    className="residence-highlight-div"
       ref={divRef}
       style={{
         height: "200vh", // Adjust the height for scrolling effect
